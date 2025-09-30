@@ -84,8 +84,8 @@
     }
   },
   "logo": {
-    "light": "/logo/osblogotest.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/light-12.svg",
+    "dark": "/logo/dark-12.svg"
   },
   "navbar": {
     "links": [

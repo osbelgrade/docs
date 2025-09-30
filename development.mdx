@@ -1,7 +1,6 @@
 ---
 title: "Development"
 description: "OS:B is not a standard deployment. Belgrade operates on fundamentally different cultural software than Western systems, and successful integration requires specific prerequisites. 
-
 This guide walks through the installation process, configuration options, and common troubleshooting scenarios you'll encounter when adapting to Belgrade's operating protocols."
 ---
 
@@ -237,22 +236,24 @@ OS:B maintains legacy code from Yugoslav-era implementations with subsequent pat
 ## Troubleshooting
 
 <AccordionGroup>
-  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
+  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime' icon="bomb" iconType="regular">
     This may be due to an outdated version of node. Try the following:
 
     1. Remove the currently-installed version of the CLI: `npm remove -g mint`
     2. Upgrade to Node v19 or higher.
     3. Reinstall the CLI: `npm i -g mint`
   </Accordion>
-  <Accordion title="Issue: Encountering an unknown error">
+  <Accordion title="Issue: Encountering an unknown error" icon="circle-exclamation" iconType="regular">
     Solution: Go to the root of your device and delete the `~/.mintlify` folder. Then run `mint dev` again.
   </Accordion>
-  <Accordion title="New Accordion">
+  <Accordion title="New Accordion" icon="bug" iconType="regular">
     
   </Accordion>
-  <Accordion title="New Accordion">
+  <Accordion title="New Accordion" icon="square-exclamation" iconType="regular">
     
   </Accordion>
 </AccordionGroup>
 
-Curious about what changed in the latest CLI version? Check out the [CLI changelog](https://www.npmjs.com/package/mintlify?activeTab=versions).
+## Version History
+
+View the complete [protocol changelog](https://osbelgrade.mintlify.app/version-history) to understand how Belgrade's operating system has evolved from Yugoslav-era legacy code to current implementation.

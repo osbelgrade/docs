@@ -3,9 +3,9 @@
   "theme": "almond",
   "name": "OS: Belgrade",
   "colors": {
-    "primary": "#e5547f",
-    "light": "#e5547f",
-    "dark": "#e5547f"
+    "primary": "#9ce8ec",
+    "light": "#9ce8ec",
+    "dark": "#9ce8ec"
   },
   "favicon": "/favicon.svg",
   "navigation": {

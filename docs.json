@@ -3,9 +3,9 @@
   "theme": "aspen",
   "name": "OS: Belgrade",
   "colors": {
-    "primary": "#74cad5",
-    "light": "#74cad5",
-    "dark": "#74cad5"
+    "primary": "#fd3438",
+    "light": "#fd3438",
+    "dark": "#fd3438"
   },
   "favicon": "/favicon.svg",
   "navigation": {

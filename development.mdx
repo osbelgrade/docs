@@ -1,93 +1,146 @@
 ---
-title: 'Development'
-description: 'Preview changes locally to update your docs'
+title: "Development"
+description: "Preview changes locally to update your docs. Follow these steps to install and run Mintlify on your operating system."
 ---
 
-<Info>
-  **Prerequisites**:
-  - Node.js version 19 or higher
-  - A docs repository with a `docs.json` file
-</Info>
-
-Follow these steps to install and run Mintlify on your operating system.
+<Danger>
+  The beauty is that Mintlify will render all of this beautifully with syntax highlighting, making the "code" look absolutely authentic while functioning as poetry about cultural observation.
+</Danger>
 
 <Steps>
-<Step title="Install the Mintlify CLI">
+  <Step title="System Requirements" icon="solar-system" iconType="regular">
+    ```bash
+    # Prerequisites for OS:B operation
+    - Balkans.history >= v1945 (recommended)
+    - Coffee.tolerance = "high"
+    - Schedule.flexibility = true
+    - English.fallback = optional
+    - Humor.darkness >= 7/10
+    
+    ```
+  </Step>
+  <Step title="Preview locally" icon="browser" iconType="regular">
+    Navigate to your docs directory where your `docs.json` file is located, and run the following command:
 
-```bash
-npm i -g mint
-```
-</Step>
+    ```bash
+    # Installing basic kafana protocol
+    $ sudo apt-get install rakija-tolerance
+    $ npm install --global smoke-immunity
+    $ git clone https://github.com/belgrade/small-talk-Serbian.git
+    $ source ~/.bashrc-cultural-adaptation
+    ```
 
-<Step title="Preview locally">
-
-Navigate to your docs directory where your `docs.json` file is located, and run the following command:
-
-```bash
-mint dev
-```
-
-A local preview of your documentation will be available at `http://localhost:3000`.
-
-</Step>
+    A local preview of your documentation will be available at `http://localhost:3000`.
+  </Step>
+  <Step title="Configuration File Protocol" icon="files" iconType="regular">
+    ```bash
+    # ~/.belgraderc
+    default_greeting: "Ćao"
+    coffee_frequency: constant
+    personal_space: negotiable
+    conversation_volume: elevated
+    sarcasm_detection: required
+    historical_awareness: recommended
+    ```
+  </Step>
 </Steps>
 
-## Custom ports
+## Code Snippets as Cultural Algorithms
 
 By default, Mintlify uses port 3000. You can customize the port Mintlify runs on by using the `--port` flag. For example, to run Mintlify on port 3333, use this command:
 
 ```bash
-mint dev --port 3333
+function navigateTram(destination, schedule) {
+  // Note: schedule parameter is decorative only
+  if (tramArrives === "eventually") {
+    board();
+    // No validation - ticket inspection is probabilistic
+    findSpace();
+  }
+  return whenItGetsThereItGetsThere;
+}
 ```
 
-If you attempt to run Mintlify on a port that's already in use, it will use the next available port:
+If you attempt to run OS:B on a port that's already in use, it will use the next available port:
 
-```md
+```bash
 Port 3000 is already in use. Trying 3001 instead.
 ```
 
-## Mintlify versions
+## Error Messages
 
-Please note that each CLI release is associated with a specific version of Mintlify. If your local preview does not align with the production version, please update the CLI:
+Please note that each CLI release is associated with a specific version of OS:B If your local preview does not align with the production version, please update the CLI:
 
 ```bash
-npm mint update
+Error 404: Punctuality Not Found
+Warning: cultural_context.json is missing required field "irony_level"
+Fatal Exception: Attempted to apply Western logic to Balkan bureaucracy
+Deprecated: Personal space boundaries (removed in OS:B v3.0)
 ```
 
-## Validating links
+## Debugging Cultural Misunderstandings
 
 The CLI can assist with validating links in your documentation. To identify any broken links, use the following command:
 
 ```bash
-mint broken-links
+# Troubleshooting Guide: Why is everyone staring?
+
+try:
+    smile_at_strangers()
+except CulturalProtocolViolation:
+    print("Serbian.social.contract does not include unprompted friendliness")
+    print("Recommended: Maintain neutral expression until explicit connection")
 ```
 
-## Deployment
+## Deployment Confirmation
 
 If the deployment is successful, you should see the following:
 
-<Frame>
-  <img src="/images/checks-passed.png" alt="Screenshot of a deployment confirmation message that says All checks have passed." style={{ borderRadius: '0.5rem' }} />
-</Frame>
+```bash
+✓ All cultural checks have passed
+✓ Rakija tolerance: operational  
+✓ Tram navigation: functional
+✓ Cynical humor: integrated
+✓ OS:B deployment successful
+```
 
-## Code formatting
+## Version History & Changelog
 
-We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
+We suggest using extensions on your IDE to recognise and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
+
+```bash
+## OS:B Changelog
+
+### v2024.10.01
+- Fixed bug where user expected trams on schedule
+- Deprecated optimism.exe 
+- Added native support for improvisation protocols
+- Improved memory management for Yugoslav nostalgia
+
+### v2024.09.28  
+- Initial Belgrade deployment
+- Legacy Warsaw protocols still running in background
+- Known issues: User still attempting Western efficiency standards
+```
 
 ## Troubleshooting
 
 <AccordionGroup>
   <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
-
     This may be due to an outdated version of node. Try the following:
+
     1. Remove the currently-installed version of the CLI: `npm remove -g mint`
     2. Upgrade to Node v19 or higher.
     3. Reinstall the CLI: `npm i -g mint`
   </Accordion>
-
   <Accordion title="Issue: Encountering an unknown error">
-  
     Solution: Go to the root of your device and delete the `~/.mintlify` folder. Then run `mint dev` again.
+  </Accordion>
+  <Accordion title="New Accordion">
+    
+  </Accordion>
+  <Accordion title="New Accordion">
+    
   </Accordion>
 </AccordionGroup>
 

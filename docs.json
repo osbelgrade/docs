@@ -23,15 +23,18 @@
           },
           
           {
-            "group": "Categories",
+            "group": "Chapters",
             "pages": [
               "chapters/core-functions",
-              "essentials/navigation"
+              "chapters/user-interface",
+              "chapters/background-processes",
+              "chapters/system-errors",
+              "essentials/version-history"
             ]
           },
           
           {
-            "group": "Writing content",
+            "group": "Codex",
             "pages": [
               "essentials/markdown",
               "essentials/code",

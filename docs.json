@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "OS:B",
+        "tab": "OS:Belgrade",
         "groups": [
           {
             "group": "Getting started",
@@ -108,23 +108,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Reticulate",
-          "href": "https://reticulate.blog",
-          "icon": "book-open-cover",
-          "iconType": "regular"
-        },
-        {
-          "anchor": "Codex",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper",
-          "iconType": "regular"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light-red.svg",

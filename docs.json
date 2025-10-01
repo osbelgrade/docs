@@ -50,7 +50,7 @@
             ]
           },
           {
-            "group": "CVersion History",
+            "group": "Version History",
             "pages": [
               "essentials/settings",
               "essentials/navigation"
@@ -87,7 +87,7 @@
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "System Settings",
         "groups": [
           {
             "group": "API documentation",

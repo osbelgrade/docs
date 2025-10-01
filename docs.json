@@ -24,7 +24,7 @@
           {
             "group": "Core Functions",
             "pages": [
-              "essentials/settings",
+              "chapters/core-functions",
               "essentials/navigation"
             ]
           },

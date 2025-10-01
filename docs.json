@@ -22,7 +22,35 @@
             ]
           },
           {
-            "group": "Customisation",
+            "group": "Core Functions",
+            "pages": [
+              "essentials/settings",
+              "essentials/navigation"
+            ]
+          },
+          {
+            "group": "User Interface",
+            "pages": [
+              "essentials/settings",
+              "essentials/navigation"
+            ]
+          },
+          {
+            "group": "Background Processes",
+            "pages": [
+              "essentials/settings",
+              "essentials/navigation"
+            ]
+          },
+          {
+            "group": "System Errors",
+            "pages": [
+              "essentials/settings",
+              "essentials/navigation"
+            ]
+          },
+          {
+            "group": "CVersion History",
             "pages": [
               "essentials/settings",
               "essentials/navigation"

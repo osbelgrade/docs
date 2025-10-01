@@ -21,13 +21,7 @@
               "development"
             ]
           },
-          {
-            "group": "Core Functions",
-            "pages": [
-              "chapters/core-functions",
-              "essentials/navigation"
-            ]
-          },
+          
           {
             "group": "User Interface",
             "pages": [

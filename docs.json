@@ -38,9 +38,10 @@
             ]
           },
           {
-            "group": "OS:B tools",
+            "group": "System",
             "pages": [
               "changelog",
+              "ai-tools/branding",
               "ai-tools/cursor",
               "ai-tools/claude-code",
               "ai-tools/windsurf"

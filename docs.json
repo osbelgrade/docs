@@ -29,6 +29,13 @@
             ]
           },
           {
+            "group": "Customisation",
+            "pages": [
+              "essentials/settings",
+              "essentials/navigation"
+            ]
+          },
+          {
             "group": "Writing content",
             "pages": [
               "essentials/markdown",

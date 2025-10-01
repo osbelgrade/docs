@@ -90,8 +90,9 @@
         "tab": "System Settings",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "OB:S Settings",
             "pages": [
+              "api-reference/introduction",
               "api-reference/introduction"
             ]
           },

@@ -25,38 +25,11 @@
           {
             "group": "Categories",
             "pages": [
-              "chapters/core-functions.mdx",
+              "chapters/core-functions",
               "essentials/navigation"
             ]
           },
-          {
-            "group": "Background Processes",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "System Errors",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Version History",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Customisation",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
+          
           {
             "group": "Writing content",
             "pages": [

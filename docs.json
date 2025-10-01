@@ -23,9 +23,9 @@
           },
           
           {
-            "group": "User Interface",
+            "group": "Categories",
             "pages": [
-              "essentials/settings",
+              "chapters/core-functions.mdx",
               "essentials/navigation"
             ]
           },

@@ -25,7 +25,10 @@ description: "OS:B is not a standard deployment. Belgrade operates on fundamenta
     Navigate to your docs directory where your `docs.json` file is located, and run the following command:
 
     ```bash
-    npm install -g belgrade-os
+    $ sudo apt-install belgrade-protocols
+    $ belgrade-os run --tempo balkan --schedule eventual
+    $ source ~/.belgraderc
+    $ belgrade-os run --cultural-adaptation-mode active
     ```
   </Step>
   <Step title="Initialise Local Integration" icon="files" iconType="regular">
@@ -43,7 +46,7 @@ description: "OS:B is not a standard deployment. Belgrade operates on fundamenta
     ```
   </Step>
   <Step title="Protocol Versions" icon="hands" iconType="regular">
-    Please note that each neighborhood is associated with a specific version of Belgrade protocols. If your local behavior does not align with the cultural expectations, please update your integration:
+    Please note that each neighbourhood is associated with a specific version of Belgrade protocols. If your local behavior does not align with the cultural expectations, please update your integration:
 
     ```bash
     npm update belgrade-os
@@ -90,22 +93,22 @@ We suggest developing the following capabilities to enhance your OS:B experience
     Recalibrates audio processing thresholds to accommodate Belgrade's elevated baseline conversation volume without triggering conflict detection protocols. Differentiates between passionate discussion and actual confrontation. Eliminates false-positive aggression signals in kafanas and public spaces. Adjustment period typically requires 7-14 days of exposure.
   </Accordion>
   <Accordion title="Smoking Immunity" icon="smoking" iconType="regular">
-    Manages adaptation to indoor smoking environments prevalent in kafanas and social venues. Provides expectation management protocols and seating optimization strategies. Critical for full participation in essential cultural spaces. Does not modify health impacts—users with respiratory conditions should evaluate venue participation independently.
+    Manages adaptation to indoor smoking environments prevalent in kafanas and social venues. Provides expectation management protocols and seating optimisation strategies. Critical for full participation in essential cultural spaces. Does not modify health impacts - users with respiratory conditions should evaluate venue participation independently.
   </Accordion>
   <Accordion title="Serbian Language Pack" icon="flag" iconType="regular">
-    Provides essential vocabulary for daily operations including kafana ordering, tram navigation, and basic apologies. Reduces dependency on English-only protocols and enables transaction completion without gesture-based workarounds. Significantly improves local perception metrics and reduces communication-based protocol violations during initial integration period.
+    Provides essential vocabulary for daily operations including in-person ordering, tram navigation, and basic apologies. Reduces dependency on English-only protocols and enables transaction completion without gesture-based workarounds. Significantly improves local perception metrics and reduces communication-based protocol violations during initial integration period.
   </Accordion>
 </AccordionGroup>
 
 ## Troubleshooting
 
-**Common Error: Could not parse local social hierarchy**
+OS:B integration failures follow predictable patterns. Most errors occur when Western cultural protocols conflict with Belgrade's operating system. This section documents common error states, their diagnostic signatures, and resolution procedures. Execute diagnostic commands when experiencing unexpected social responses or persistent integration difficulties.
 
 ```bash
 $ belgrade-os diagnose --error social_hierarchy
 
 Error: Could not parse local social hierarchy
-Status: Common initialization error
+Status: Common initialisation error
 
 Recommended resolution steps:
 
@@ -115,7 +118,7 @@ Recommended resolution steps:
 2. Establish pattern recognition:
    $ belgrade-os frequent --location same_kafana --frequency daily
 
-3. Disable optimization protocols:
+3. Disable optimisation protocols:
    $ belgrade-os config --efficiency false --patience true
 
 4. Reinstall humility protocols:
@@ -125,16 +128,49 @@ Recommended resolution steps:
 
 ## Code Snippets as Cultural Algorithms
 
-By default, OS:B operates at Western efficiency standards. You can customize the operational tempo OS:B runs on by using the `--tempo` flag. For example, to run OS:B on Belgrade time, use this command:
+OS:B documents cultural protocols through executable code that functions as both valid programming logic and poetic observation. Each snippet captures behavioral patterns in algorithmic form.
 
 ```bash
-$ sudo apt-install belgrade-protocols
-$ belgrade-os run --tempo balkan --schedule eventual
-$ source ~/.belgraderc
-$ belgrade-os run --cultural-adaptation-mode active
+#!/usr/bin/env python3
+"""
+Cultural Algorithm: Kafana Time Perception
+"""
+
+def calculate_duration(clock_time, social_context):
+    """
+    Converts Western time measurements to Belgrade kafana time.
+    Note: clock_time parameter is decorative only.
+    """
+    
+    if social_context == "good_conversation":
+        perceived_time = clock_time * 0.3
+        urgency_level = 0
+        
+    elif social_context == "waiting_for_bill":
+        perceived_time = clock_time * 2.5
+        urgency_level = "irrelevant"
+        
+    else:
+        perceived_time = "eventually"
+    
+    return {
+        "actual_duration": clock_time,
+        "experienced_duration": perceived_time,
+        "concern_level": None,
+        "status": "This is how time works here"
+    }
+
+# Example execution
+>>> calculate_duration(180, "good_conversation")
+{
+    "actual_duration": 180,
+    "experienced_duration": 54,
+    "concern_level": None, 
+    "status": "This is how time works here"
+}
 ```
 
-**Example:** If you attempt to board a tram that's already at maximum human density, OS:B will compress your personal space parameters until accommodation is achieved:
+For example, if you attempt to board a tram that's already at maximum human density, OS:B will compress your personal space parameters until accommodation is achieved:
 
 ```bash
 $ belgrade-os board --line 7A --time rush_hour
@@ -235,24 +271,48 @@ OS:B maintains legacy code from Yugoslav-era implementations with subsequent pat
 ## Troubleshooting
 
 <AccordionGroup>
-  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime' icon="bomb" iconType="regular">
-    This may be due to an outdated version of node. Try the following:
+  <Accordion title="Error - Western Efficiency Protocols Still Active" icon="bomb" iconType="regular">
+    Cultural integration failing due to persistent optimisation attempts. Belgrade systems reject efficiency-focused behavioral patterns.
 
-    1. Remove the currently-installed version of the CLI: `npm remove -g mint`
-    2. Upgrade to Node v19 or higher.
-    3. Reinstall the CLI: `npm i -g mint`
+    **Resolution steps:**
+
+    1. Disable urgency modules: `belgrade-os config --urgency false --patience infinite`
+    2. Remove schedule dependency: `belgrade-os uninstall western-time-expectations`
+    3. Accept that "10 minutes" means "eventually": `belgrade-os learn --temporal-flexibility true`
+    4. Reinstall with Balkan tempo: `belgrade-os reset --expectations realistic --timeline flexible`
   </Accordion>
-  <Accordion title="Issue: Encountering an unknown error" icon="circle-exclamation" iconType="regular">
-    Solution: Go to the root of your device and delete the `~/.mintlify` folder. Then run `mint dev` again.
+  <Accordion title="Issue - Tram Schedule Interpretation Error" icon="circle-exclamation" iconType="regular">
+    System attempting to parse tram arrival times as literal data. Belgrade tram schedules function as theoretical documentation only.
+
+    **Resolution steps:**
+
+    1. Stop checking posted schedules: `belgrade-os ignore --source digital_displays`
+    2. Switch to experiential learning: `belgrade-os observe --pattern actual_arrivals --duration 2weeks`
+    3. Accept probabilistic arrival model: `belgrade-os config --tram-expectation eventual`
+    4. Learn from locals: `belgrade-os watch --target old_woman_at_stop --trust her_laugh`
   </Accordion>
-  <Accordion title="New Accordion" icon="bug" iconType="regular">
-    
+  <Accordion title="Warning - Personal Space Calculations Incompatible" icon="bug" iconType="regular">
+    Default Western personal space parameters cause navigation failures in crowded environments (trams, markets, kafanas).
+
+    **Resolution steps:**
+
+    1. Reduce boundary radius: `belgrade-os set --personal-space 0.3m`
+    2. Enable compression protocols: `belgrade-os allow --body-contact occasional`
+    3. Accept tram density: `belgrade-os board --full-tram true --breathing optional`
+    4. Recalibrate comfort thresholds: `belgrade-os adapt --proximity-tolerance high`
   </Accordion>
-  <Accordion title="New Accordion" icon="square-exclamation" iconType="regular">
-    
+  <Accordion title="Critical - Kafana Protocol Mismatch" icon="square-exclamation" iconType="regular">
+    Attempting to apply café/restaurant logic to kafana environments. These are distinct social systems requiring different behavioral protocols.
+
+    **Resolution steps:**
+
+    1. Disable turnover optimization: `belgrade-os config --time-limit null`
+    2. Understand primary function is conversation: `belgrade-os learn --purpose social_not_transactional`
+    3. Accept slow service as feature: `belgrade-os reframe --waiting-time relationship_building`
+    4. Order appropriately: `belgrade-os study --drinks coffee_rakija --food_optional true`
   </Accordion>
 </AccordionGroup>
 
 ## Version History
 
-View the complete [protocol changelog](https://osbelgrade.mintlify.app/version-history) to understand how Belgrade's operating system has evolved from Yugoslav-era legacy code to current implementation.
+View the complete [protocol changelog](https://osbelgrade.mintlify.app/changelog.mdx) to understand how Belgrade's operating system has evolved from Yugoslav-era legacy code to current implementation.

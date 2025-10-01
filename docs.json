@@ -41,6 +41,7 @@
             "group": "System",
             "pages": [
               "changelog",
+              "template",
               "ai-tools/zora",
               "ai-tools/branding",
               "ai-tools/cursor",

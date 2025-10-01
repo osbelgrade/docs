@@ -22,7 +22,7 @@
             ]
           },
           {
-            "group": "Customization",
+            "group": "Customisation",
             "pages": [
               "essentials/settings",
               "essentials/navigation"
@@ -38,8 +38,9 @@
             ]
           },
           {
-            "group": "AI tools",
+            "group": "OS:B tools",
             "pages": [
+              "changelog",
               "ai-tools/cursor",
               "ai-tools/claude-code",
               "ai-tools/windsurf"

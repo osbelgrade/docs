@@ -1,143 +1,133 @@
 ---
-title: "Windsurf setup"
-description: "Configure Windsurf for your documentation workflow"
+title: "Windsurf "
+description: "Configure Windsurf's Cascade AI assistant to help you write and maintain further personal documentation. "
 icon: "water"
 ---
 
-Configure Windsurf's Cascade AI assistant to help you write and maintain documentation. This guide shows how to set up Windsurf specifically for your Mintlify documentation workflow.
+![Windsurf Pn](/images/Windsurf.png)
 
 ## Prerequisites
 
-- Windsurf editor installed
-- Access to your documentation repository
+- Windsurf IDE installed ([download here](https://codeium.com/windsurf))
+- Active Codeium account (free or Pro)
 
-## Workspace rules
+## Setup
 
-Create workspace rules that provide Windsurf with context about your documentation project and standards.
+**Install Windsurf**\
+Download and install Windsurf IDE from the official Codeium website.
 
-Create `.windsurf/rules.md` in your project root:
+**Open Your Documentation Project**\
+Launch Windsurf and open your OS:B documentation repository.
 
-```bash
-#!/usr/bin/env python3
-"""
-Initial System Boot - First Contact Protocol
-OS:B v0.1.0 (Unoptimized)
-"""
+**Configure AI Assistant**\
+Windsurf's AI assistant (Cascade) is enabled by default. Access it via:
 
-class ArrivalSequence:
-    def __init__(self):
-        self.location = "Beranska Ul, Belgrade"
-        self.prior_knowledge = None
-        self.expectations = "deliberately_suspended"
-        self._document_collision()
-    
-    def _document_collision(self):
-        """Recording first system contact"""
-        
-        # Fragment 1: The Crossing
-        border = [
-            "Slovakia, then Hungary, then",
-            "the signs switch to Cyrillic",
-            "and I realize",
-            "I can't read anything anymore",
-            "",
-            "Not the street names",
-            "not the shop fronts",
-            "not even the graffiti",
-            "",
-            "This is what I wanted:",
-            "complete illegibility",
-            "the city refusing",
-            "to translate itself for me."
-        ]
-        
-        # Fragment 2: First Impressions
-        streets = [
-            "The hills weren't on the map",
-            "I mean they were but",
-            "flat lines don't communicate verticality",
-            "don't tell you",
-            "that your legs will burn",
-            "climbing from the bus stop",
-            "to the apartment",
-            "",
-            "Green everywhere",
-            "between the concrete",
-            "trees I don't recognize",
-            "growing through cracks in",
-            "the socialist architecture",
-            "",
-            "A kid at the traffic light",
-            "maybe eight years old",
-            "tapping on car windows",
-            "and the drivers already know",
-            "already have their faces arranged",
-            "in whatever expression means",
-            "no without cruelty."
-        ]
-        
-        # Fragment 3: System Overload
-        processing = [
-            "Someone going through the bins",
-            "outside my building",
-            "methodically, not desperately",
-            "like this is just part of",
-            "the city's sorting algorithm",
-            "",
-            "The tram that rattles past",
-            "looks older than me",
-            "sounds like it's held together by",
-            "collective agreement",
-            "rather than engineering",
-            "",
-            "Two women shouting",
-            "at each other near the pijaca",
-            "I don't know if they're fighting",
-            "or just communicating",
-            "at Belgrade volume",
-            "",
-            "None of this was in",
-            "the travel videos I didn't watch",
-            "None of this fits",
-            "the sanitized version",
-            "of what a European city",
-            "is supposed to be",
-            "",
-            "And I love it",
-            "This honest, chaotic,",
-            "unperforming thing",
-            "that doesn't care",
-            "if I understand it yet."
-        ]
-        
-        self.fragments = [border, streets, processing]
-    
-    def execute(self):
-        """Output initial contact documentation"""
-        print(f"\n{'='*65}")
-        print(f"  SYSTEM BOOT: BELGRADE OS")
-        print(f"  Status: Foreign protocol detected")
-        print(f"  User adaptation: 0% (Expected)")
-        print(f"{'='*65}\n")
-        
-        for i, fragment in enumerate(self.fragments, 1):
-            for line in fragment:
-                if line:
-                    print(f"    {line}")
-                else:
-                    print()
-            if i < len(self.fragments):
-                print()
-        
-        print(f"\n{'='*65}")
-        print(f"  # Warning: Previous OS assumptions")
-        print(f"  # may not apply here")
-        print(f"  # The particle has collided with")
-        print(f"  # a fluid that refuses")
-        print(f"  # to behave like a fluid")
-        print(f"  # Integration timeline: Unknown")
+- Chat panel (right sidebar)
+- Inline completions (as you type)
+- Command palette (`Cmd/Ctrl + K`)
 
-if __name__ == "__main__":
-    arrival = ArrivalSequence()
-    arrival.execute()
+**Add Documentation Context (Optional)**\
+Create a `.windsurfrules` file at the root of your documentation repository to train Windsurf on your OS:B documentation standards.
+
+## Create .windsurfrules
+
+Create a `.windsurfrules` file at the root of your documentation repository to establish OS:B-specific guidelines:
+
+```python
+# OS:B Documentation Standards
+
+## Project Context
+This is OS:B (Belgrade Operating System) - a poetry project documenting Belgrade's 
+cultural operating system through technical documentation aesthetics. 
+All documentation must maintain technical manual voice while being accessible.
+
+## Python Poetry Format
+All poems follow this structure:
+- 60-70 character line maximum
+- Clean multi-line string in observe() method
+- Metadata: location, timestamp, coordinates (in that order)
+- Minimal footer only
+- Free verse with intentional line breaks
+
+## Documentation Voice
+- Technical but not jargon-heavy
+- Present tense, active voice
+- Concrete observations over interpretation
+- No romanticization or performance of culture
+
+## File Naming
+Format: location-descriptor-YYYYMMDD
+Example: oslobodjena-dusk-20241001
+
+## Module Organization
+- Core Functions: Essential Belgrade processes
+- User Interface Studies: Navigation and interaction protocols
+- Background Processes: Invisible cultural operations
+- System Errors & Patches: Integration failures and debugging
+- Version History: Historical protocol evolution
+
+## Code Examples
+Use bash for CLI commands, Python for poems and cultural algorithms. 
+All code must be functional and properly formatted for Mintlify rendering.
 ```
+
+## Using Windsurf with OS:B
+
+**Code Generation**\
+Use Cascade to generate Python poem templates following OS:B standards. Reference `.windsurfrules` for consistent formatting.
+
+**Documentation Editing**\
+Windsurf provides AI-assisted editing for markdown content. Request changes like `update this section to match technical documentation voice` or `add bash code example for this installation step`
+
+**Multi-file Context**\
+Windsurf maintains awareness across your entire documentation repository, helping ensure consistency in terminology, structure, and formatting.
+
+**Inline Assistance**\
+As you write, Windsurf suggests completions that follow your established patterns and project conventions.
+
+## Workflow Integration
+
+**Creating New Observations**
+
+1. Open new file with naming convention
+2. Request: `Create OS:B poem template for [observation type]`
+3. Windsurf generates structured Python template
+4. Fill in metadata and poem content
+5. Windsurf suggests line breaks and formatting improvements
+
+**Updating Documentation**
+
+1. Navigate to page requiring updates
+2. Use Cascade chat to request specific changes
+3. Review and accept AI-suggested modifications
+4. Windsurf maintains consistency with existing style
+
+<Info>
+  **Troubleshooting** Ask Cascade about Mintlify-specific syntax, navigation structure, or formatting issues. The AI can reference your entire project context to provide relevant solutions.
+</Info>
+
+## Best Practices
+
+**Context Loading**\
+Open related files when working on connected documentation sections so Windsurf understands full context.
+
+**Specific Prompts**\
+Instead of "improve this," specify "rewrite in technical documentation voice maintaining 60-character line limit."
+
+**Iterative Refinement**\
+Use chat history to build on previous suggestions rather than starting fresh each time.
+
+**Consistency Checks**\
+Ask Windsurf to verify formatting consistency: "Check if all poem files follow the metadata order: location, timestamp, coordinates."
+
+## Resources
+
+- [Windsurf Documentation](https://codeium.com/windsurf/docs)
+- [Cascade AI Features](https://codeium.com/windsurf/cascade)
+- OS:B Technical Standards (see Knowledge Transfer document)
+
+---
+
+<Tip>
+  **Note**: While Windsurf can assist with code generation and documentation editing, it cannot observe Belgrade for you. The AI helps structure and format documentation - actual protocol discovery requires direct engagement with the city's operating system.
+</Tip>

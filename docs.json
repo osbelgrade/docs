@@ -55,28 +55,6 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "System Settings",
-        "groups": [
-          {
-            "group": "OB:S Settings",
-            "pages": [
-              "api-reference/introduction",
-              "ai-tools/zora",
-              "ai-tools/share-to"
-            ]
-          },
-          {
-            "group": "Credits",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
       }
     ]
   },

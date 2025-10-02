@@ -1,0 +1,45 @@
+---
+title: "oslobodjena-dusk-20251001"
+description: "Observation Log: Oslobodjena at Dusk"
+icon: "sun-dust"
+iconType: "regular"
+---
+
+```python oslobodjena-dusk-20251001
+#!/usr/bin/env python3
+"""
+Observation Log: Oslobodjena at Dusk
+OS:B Core Functions - Sensory Protocol Documentation
+"""
+
+class SensoryTransition:
+    def __init__(self):
+        self.location = "Oslobodjena, Banjica"
+        self.timestamp = "2025-10-01T19:47:00+02:00"
+        self.coordinates = "44.75839° N, 20.48179° E"
+        
+    
+    def observe(self):
+        return """
+Sunset joins the clamour
+Of people heading home along Oslobodjena
+The buildings desaturate before my eyes
+From rose to grey
+
+Until, gradually
+It is only the sound of the trams
+that keeps me in this city
+
+That, and the refuse collectors
+catching car headlights
+in their hi-vis vests
+The day's rubbish will vanish
+        """
+
+if __name__ == "__main__":
+    observation = SensoryTransition()
+    print(observation.observe())
+    print(f"\n# Logged: {observation.timestamp}")
+    print(f"# Location: {observation.location}")
+    print(f"# Coordinates: {observation.coordinates}")
+```

@@ -1,0 +1,97 @@
+---
+title: "arrival-sequence-20250930"
+description: "Description of your new file."
+icon: "house-person-return"
+iconType: "regular"
+---
+
+```python arrival-sequence-20250930
+#!/usr/bin/env python3
+"""
+Observation Log: Arrival in Belgrade
+OS:B Core Functions - Initial System Boot
+"""
+
+class ArrivalSequence:
+    def __init__(self):
+        self.location = "Beranska Ul, Belgrade"
+        self.timestamp = "2025-09-30T16:30:00+02:00"
+        self.coordinates = "44.75885° N, 20.48246° E"
+    
+    def observe(self):
+        return """
+Slovakia, then Hungary, then
+the signs switch to Cyrillic
+and I realise
+I can't read anything anymore
+
+Not the street names
+not the shop fronts
+not even the graffiti
+
+This is what I wanted:
+complete illegibility
+the city refusing
+to translate itself for me.
+
+The hills weren't on the map
+I mean they were but
+flat lines don't communicate verticality
+don't tell you
+that your legs will burn
+climbing from the bus stop
+to the apartment
+
+Green everywhere
+between the concrete
+trees I don't recognise
+growing through cracks in
+the socialist architecture
+
+A kid at the traffic light
+maybe eight years old
+tapping on car windows
+and the drivers already know
+already have their faces arranged
+in whatever expression means
+no without cruelty.
+
+Someone going through the bins
+outside my building
+methodically, not desperately
+like this is just part of
+the city's sorting algorithm
+
+The tram that rattles past
+looks older than me
+sounds like it's held together by
+collective agreement
+rather than engineering
+
+Two women shouting
+at each other near the pijaca
+I don't know if they're fighting
+or just communicating
+at Belgrade volume
+
+None of this was in
+the travel videos I didn't watch
+None of this fits
+the sanitised version
+of what a European city
+is supposed to be
+
+And I love it
+This honest, chaotic,
+unperforming thing
+that doesn't care
+if I understand it yet.
+        """
+
+if __name__ == "__main__":
+    observation = ArrivalSequence()
+    print(observation.observe())
+    print(f"\n# Logged: {observation.timestamp}")
+    print(f"# Location: {observation.location}")
+    print(f"# Coordinates: {observation.coordinates}")
+```

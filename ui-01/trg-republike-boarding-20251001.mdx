@@ -1,0 +1,53 @@
+---
+title: "trg-republike-boarding-20251001"
+description: "Description of your new file."
+---
+
+```python trg-republike-boarding-20251001
+#!/usr/bin/env python3
+"""
+Observation Log: Tram Stop Protocol
+OS:B User Interface - Queue Management Systems
+"""
+
+class TramBoardingSequence:
+    def __init__(self):
+        self.location = "Tram Stop, Trg Republike"
+        self.timestamp = "2025-10-01T14:30:00+02:00"
+        self.coordinates = "44.79504° N, 20.45961° E"
+    
+    def observe(self):
+        return """
+Twenty bodies compressed at the platform edge
+Shoulders angled forward
+Weight already shifting
+before the tram appears
+
+The buildings behind them
+rise in stained concrete repetition
+Balconies stacked like filing cabinets
+laundry hanging motionless in grey air
+
+The tram announces itself
+with metal shriek on metal
+Doors open
+and the queue dissolves
+
+Bodies push inward
+against bodies pushing out
+No order, no queue
+just pressure finding space
+
+The tram lurches forward
+paint peeling from its flanks
+Someone's elbow catches my ribs
+This is how movement happens here
+        """
+
+if __name__ == "__main__":
+    observation = TramBoardingSequence()
+    print(observation.observe())
+    print(f"\n# Logged: {observation.timestamp}")
+    print(f"# Location: {observation.location}")
+    print(f"# Coordinates: {observation.coordinates}")
+```

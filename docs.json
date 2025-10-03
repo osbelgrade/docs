@@ -56,7 +56,15 @@
               "ai-tools/claude-code",
               "ai-tools/windsurf"
             ]
-          }
+          },
+          {
+            "group": "Admin",
+            "pages": [
+             "about",
+             "tools",
+             "reticulate"
+           ]
+         }
         ]
       }
     ]

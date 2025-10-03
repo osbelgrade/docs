@@ -62,6 +62,7 @@
             "pages": [
              "about",
              "tools",
+             "wwtc",
              "reticulate"
            ]
          }

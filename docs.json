@@ -62,7 +62,7 @@
     ]
   },
   "logo": {
-    "light": "/logo/thin-logo.svg",
+    "light": "/logo/thin-large.svg",
     "dark": "/logo/dark-red.svg"
   },
   "navbar": {

@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "aspen",
-  "name": "OS: Belgrade",
+  "name": "COS: Belgrade",
   "colors": {
     "primary": "#c0343b",
     "light": "#c0343b",
@@ -14,7 +14,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "OS:Belgrade",
+        "tab": "COS:Belgrade",
         "groups": [
           {
             "group": "Getting started",

@@ -10,27 +10,26 @@ sidebarTitle: "Zora"
 
 ## System Overview
 
-Zora is named after the Serbian "зора" (dawn/daybreak) and she functions as an intelligent query interface for users attempting to understand OS:B protocols documented throughout this site
+Zora is named after the Serbian "зора" (dawn/daybreak) and she functions as an intelligent query interface for users attempting to understand COS:B protocols documented throughout this site
 
 ## Core Functionality
 
-Zora processes natural language queries about OS:B documentation using agentic retrieval-augmented generation powered by Claude Sonnet 4. When users submit protocol clarification requests, Zora:
+Zora processes natural language queries about COS:B documentation using agentic retrieval-augmented generation powered by Claude Sonnet 4. When users submit protocol clarification requests, Zora:
 
-<Expandable title="Searches Documentation">
-  Retrieves relevant observations, protocol specifications, and system documentation to provide accurate contextual responses.
-</Expandable>
-
-**Searches Documentation**\
-Retrieves relevant observations, protocol specifications, and system documentation to provide accurate contextual responses.
-
-**Provides Source Citations**\
-Links directly to referenced pages within OS:B modules, enabling users to examine full documentation context.
-
-**Generates Code Examples**\
-Creates executable code snippets demonstrating cultural protocol implementation based on documented observations.
-
-**Identifies Documentation Gaps**\
-Tracks frequently asked questions that may require additional protocol documentation or clarification.
+<AccordionGroup>
+  <Accordion title="Searches Documentation" icon="message-quote" iconType="solid">
+    Retrieves relevant observations, protocol specifications, and system documentation to provide accurate contextual responses.
+  </Accordion>
+  <Accordion title="Provides Source Citations" icon="message-quote" iconType="solid">
+    Links directly to referenced pages within COS:B modules, enabling users to examine full documentation context.
+  </Accordion>
+  <Accordion title="Generates Code Examples" icon="message-quote" iconType="solid">
+    Creates executable code snippets demonstrating cultural protocol implementation based on documented observations.
+  </Accordion>
+  <Accordion title="Identifies Documentation Gaps" icon="message-quote" iconType="solid">
+    Tracks frequently asked questions that may require additional protocol documentation or clarification.
+  </Accordion>
+</AccordionGroup>
 
 ## Accessing Zora
 
@@ -40,59 +39,62 @@ Three methods for initiating query interface:
 `Cmd + I` (macOS) or `Ctrl + I` (Windows/Linux)
 
 **Assistant Button**\
-Located adjacent to search functionality in site navigation
+Located adjacent to foot of viewport
 
 **Direct URL Parameter**\
-Append `?assistant=open` to any OS:B page URL to launch Zora on page load
+Append `?assistant=open` to any COS:B page URL to launch Zora on page load
 
 ## Query Types Supported
 
 Zora can assist with:
 
-- **Protocol Clarification**: "How does tram boarding actually work in Belgrade?"
-- **Module Navigation**: "Show me observations about kafana culture"
-- **Technical Implementation**: "How should I format a new observation entry?"
-- **Contextual Reference**: "What does 'Belgrade volume' mean?"
-- **Cross-Reference**: "Find all observations from Banjica district"
-- **System Architecture**: "Explain the five module structure"
+- **Protocol Clarification**: `"How does tram boarding actually work in Belgrade?"`
+- **Module Navigation**: `"Show me observations about kafana culture"`
+- **Technical Implementation**: `"How should I format a new observation entry?"`
+- **Contextual Reference**: `"What does 'Belgrade volume' mean?"`
+- **Cross-Reference**: `"Find all observations from Banjica district"`
+- **System Architecture**: `"Explain the five module structure"`
 
 ## Limitations
 
-**Scope Boundaries**\
-Zora operates only on documented OS:B content. Questions about protocols not yet observed or documented will receive acknowledgment of documentation gaps rather than speculation.
+<AccordionGroup>
+  <Accordion title="Scope Boundaries" icon="circle-stop" iconType="solid">
+    Zora operates only on documented COS:B content. Questions about protocols not yet observed or documented will receive acknowledgment of documentation gaps rather than speculation.
+  </Accordion>
+  <Accordion title="Deflection Protocol" icon="circle-stop" iconType="regular">
+    Queries outside Zora's operational parameters are redirected to [david@reticulate.blog](mailto:david@reticulate.blog) for direct consultation.
+  </Accordion>
+  <Accordion title="External Resources" icon="circle-stop" iconType="solid">
+    Zora cannot access external Belgrade documentation or general travel resources. Responses derive exclusively from OS:B systematic observations.
+  </Accordion>
+</AccordionGroup>
 
-**Deflection Protocol**\
-Queries outside Zora's operational parameters are redirected to [david@reticulate.blog](mailto:david@reticulate.blog) for direct consultation.
-
-**External Resources**\
-Zora cannot access external Belgrade documentation or general travel resources. Responses derive exclusively from OS:B systematic observations.
-
-## Query Analytics
+## \
+Query Analytics
 
 OS:B monitors query patterns to identify:
 
-- Content gaps requiring additional protocol documentation
-- High-traffic observation modules indicating user interest areas
-- Unsuccessful query patterns revealing documentation clarity issues
-- Common confusion points needing enhanced explanation
+- `Content gaps` requiring additional protocol documentation
+- `High-traffic observation` modules indicating user interest areas
+- `Unsuccessful query patterns` revealing documentation clarity issues
+- `Common confusion points` needing enhanced explanation
 
 These analytics inform ongoing documentation development and module expansion.
 
-## Optimizing Zora Interactions
+## Optimising Zora Interactions
 
-**Effective Query Patterns:**
-
-- Specific protocol questions: "What's the queue dissolution pattern for tram boarding?"
-- Module-specific searches: "Find User Interface observations"
-- Technical implementation: "Show me the Python template structure"
-
-**Less Effective Patterns:**
-
-- Questions requiring lived experience: "What should I do in Belgrade?"
-- Speculation requests: "Will I enjoy kafana culture?"
-- Content not yet documented: "How do Serbian weddings work?"
-
-Zora assists with navigating existing documentation, not creating new observations. Documentation expands organically through systematic field observation.
+<AccordionGroup>
+  <Accordion title="Effective Query Patterns" icon="clipboard-question" iconType="solid">
+    - Specific protocol questions: `"What's the queue dissolution pattern for tram boarding?"`
+    - Module-specific searches: `"Find User Interface observations"`
+    - Technical implementation: `"Show me the Python template structure"`
+  </Accordion>
+  <Accordion title="Less Effective Patterns" icon="clipboard-question" iconType="solid">
+    - Questions requiring lived experience: `"What should I do in Belgrade?"`
+    - Speculation requests: `"Will I enjoy kafana culture?"`
+    - Content not yet documented: `"How do Serbian weddings work?"`
+  </Accordion>
+</AccordionGroup>
 
 ## Technical Architecture
 
@@ -105,28 +107,35 @@ Zora utilizes:
 
 ## Privacy & Data Usage
 
-**Query Logging**\
-All queries are logged for documentation improvement analysis. No personal identification data collected beyond query content and timestamp.
-
-**Export Capability**\
-Query analytics available for review in dashboard interface, exportable as CSV for analysis.
-
-**Usage Limits**\
-Zora operates within platform message allowances. Excessive usage may trigger temporary rate limiting.
+<AccordionGroup>
+  <Accordion title="Query Logging" icon="shield-halved" iconType="solid">
+    All queries are logged for documentation improvement analysis. No personal identification data collected beyond query content and timestamp.
+  </Accordion>
+  <Accordion title="Export Capability" icon="shield-halved" iconType="solid">
+    Query analytics available for review in dashboard interface, exportable as CSV for analysis.
+  </Accordion>
+  <Accordion title="Usage Limits" icon="shield-halved" iconType="solid">
+    Zora operates within platform message allowances. Excessive usage may trigger temporary rate limiting.
+  </Accordion>
+</AccordionGroup>
 
 ## Integration with OS:B Methodology
 
 Zora functions as meta-documentation layer - a system for navigating documentation about Belgrade's systems. This recursive structure mirrors the project's investigation of how we understand cultural operating systems through systematic observation.
 
-Users encountering Belgrade's actual cultural software benefit from Zora's assistance navigating the documentation of that software. The assistant doesn't replace direct experience; it facilitates understanding of documented experience.
+<Info>
+  Users encountering Belgrade's actual cultural software benefit from Zora's assistance navigating the documentation of that software. The assistant doesn't replace direct experience; it facilitates understanding of documented experience.
+</Info>
 
 ## Status & Availability
 
-**Current Status**: Operational\
-**Version**: Integrated with Claude Sonnet 4\
-**Uptime**: Continuous during platform availability\
-**Response Time**: Near-instantaneous for standard queries
+**Current Status**: `Operational`\
+**Version**: `Integrated with Claude Sonnet 4`\
+**Uptime**: `Continuous during platform availability`\
+**Response Time**: `Near-instantaneous for standard queries`
 
 ---
 
-**Note**: Zora cannot observe Belgrade for you. The assistant helps you navigate existing documentation - actual protocol discovery requires direct engagement with the city's operating system. Get out there and observe.
+<Warning>
+  **Note**: Zora cannot observe Belgrade for you. The assistant helps you navigate existing documentation - actual protocol discovery requires direct engagement with the city's operating system. Get out there and observe.
+</Warning>

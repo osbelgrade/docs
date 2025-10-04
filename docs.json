@@ -10,6 +10,10 @@
   "styling": {
     "eyebrows": "breadcrumbs"
 },
+"modeToggle": {
+    "default": "dark",
+    "strict": false
+  },  
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [

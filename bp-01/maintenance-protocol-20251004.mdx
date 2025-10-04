@@ -1,0 +1,54 @@
+---
+title: "maintenance-protocol"
+description: "Unofficial maintenance protocol: street worker routine"
+---
+
+```python maintenance-protocol-20251004
+#!/usr/bin/env python3
+"""
+Observation Log: Tram Platform
+COS:B Background Processes - Unofficial maintenance protocol: street worker routine
+"""
+
+class PlatformMaintenanceSequence:
+    def __init__(self):
+        self.location = "Bebelova tram stop, Voždovac, Belgrade"
+        self.timestamp = "2025-10-04T[TIME]+02:00"
+        self.coordinates = "44.77° N, 20.47° E"  # Approximate - Voždovac district
+        self.worker_status = "Unofficial maintenance operative"
+        self.equipment = "Green wheelie bin, handmade wheel contraption, witch's broom, vodka bottle"
+    
+    def observe(self):
+        return """
+The old man walked towards me along the tramlines,
+big he was, properly down at heel,
+
+pushing a green wheelie bin
+on some hand-made contraption,
+wheels underneath wheels.
+
+Sticking out: a classic witch's broom.
+Swinging from its handle: a litre of vodka.
+
+He emptied the rubbish bin,
+then began to sweep the platform
+carefully,
+
+stopping every few seconds
+to look up.
+
+As he approached, he smiled broadly - 
+
+and in perfect English said,
+"Must make tidy, please..."
+        """
+
+if __name__ == "__main__":
+    observation = PlatformMaintenanceSequence()
+    print(observation.observe())
+    print(f"\n# Logged: {observation.timestamp}")
+    print(f"# Location: {observation.location}")
+    print(f"# Coordinates: {observation.coordinates}")
+    print(f"# Status: {observation.worker_status}")
+    print(f"# Equipment: {observation.equipment}")
+```

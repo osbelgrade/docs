@@ -12,7 +12,7 @@
 },
 "modeToggle": {
     "default": "dark",
-    "strict": false
+    "strict": "false"
   },  
   "favicon": "/favicon.svg",
   "navigation": {

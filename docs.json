@@ -71,8 +71,8 @@
     ]
   },
   "logo": {
-    "light": "/logo/osbelgrade.svg",
-    "dark": "/logo/osbelgrade-dark.svg"
+    "light": "/logo/osbelgradelogo.svg",
+    "dark": "/logo/osbelgradelogo-dark.svg"
   },
   "navbar": {
     "links": [

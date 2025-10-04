@@ -11,6 +11,15 @@
     "eyebrows": "breadcrumbs"
 },
   "favicon": "/favicon.svg",
+  "head": {
+    "scripts": [
+      {
+        "src": "https://unpkg.com/@elevenlabs/convai-widget-embed",
+        "async": true,
+        "type": "text/javascript"
+      }
+    ]
+  },
   "navigation": {
     "tabs": [
       {

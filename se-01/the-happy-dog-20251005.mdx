@@ -1,0 +1,51 @@
+---
+title: "the-happy-dog-20251005"
+description: "Observation Log: Jajinci Memorial"
+---
+
+```python the-happy-dog-20251005
+#!/usr/bin/env python3
+"""
+Observation Log: Jajinci Memorial
+COS:B System Errors - Memorial protocol mismatch: expected solemnity not found
+"""
+
+class MemorialProtocolSequence:
+    def __init__(self):
+        self.location = "Jajinci Memorial, Belgrade"
+        self.timestamp = "2025-10-05T15:46+02:00"
+        self.coordinates = "44.7519° N, 20.4247° E"
+        self.expected_protocol = "Western memorial solemnity"
+        self.observed_protocol = "Life alongside death"
+    
+    def observe(self):
+        return """
+A walk across the suburban hills to the camp.
+
+The church a brutalist statement in concrete
+as water dripped
+from rusted pipes.
+
+The lady reading her book
+on the edge of the mass grave
+as clouds raced overhead.
+
+Flowers dropping to the sound of the workmen—
+working?
+On a Sunday?
+
+There was no sense of foreboding here.
+Or at least the sense that I am used to.
+
+The happy dog followed me.
+        """
+
+if __name__ == "__main__":
+    observation = MemorialProtocolSequence()
+    print(observation.observe())
+    print(f"\n# Logged: {observation.timestamp}")
+    print(f"# Location: {observation.location}")
+    print(f"# Coordinates: {observation.coordinates}")
+    print(f"# Expected: {observation.expected_protocol}")
+    print(f"# Observed: {observation.observed_protocol}")
+```

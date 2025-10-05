@@ -3,9 +3,9 @@
   "theme": "aspen",
   "name": "COS: Belgrade",
   "colors": {
-    "primary": "#c0343b",
-    "light": "#c0343b",
-    "dark": "#c0343b"
+    "primary": "#ff4b33",
+    "light": "#ff4b33",
+    "dark": "#ff4b33"
   },
   "styling": {
     "eyebrows": "breadcrumbs"

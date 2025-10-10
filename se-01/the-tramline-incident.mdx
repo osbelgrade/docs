@@ -1,0 +1,56 @@
+---
+title: "the-tramline-incident"
+description: "Order restoration failure: free access protocol complications"
+---
+
+```python the-tramline-incident
+#!/usr/bin/env python3
+"""
+Observation Log: Tram Line Incident
+COS:B System Errors - Order restoration failure: free access protocol complications
+"""
+
+class TransportIncidentSequence:
+    def __init__(self):
+        self.location = "Tram line, Belgrade"
+        self.timestamp = "2025-10-07T11:00+02:00"
+        self.coordinates = "44.76143° N, 20.48432° E"
+        self.system_status = "Timetables operational, passenger protocols variable"
+        self.fare_model = "Free public transport (2025)"
+    
+    def observe(self):
+        return """
+The online timetables are working
+for the first time since I arrived.
+
+Getting on the tram felt more reassuring.
+
+It wasn't long before it stopped though
+the driver leaving his cabin to run to the back.
+
+Two drunks fighting.
+
+The other passengers barely glanced.
+
+Firmly removed, they continued their battle
+on the sidewalk
+as we moved off.
+
+The public transport is free here,
+welcoming all sorts, it seems
+
+That's just one of the prices
+the good people of Belgrade have to pay.
+
+There is no refuge.
+        """
+
+if __name__ == "__main__":
+    observation = TransportIncidentSequence()
+    print(observation.observe())
+    print(f"\n# Logged: {observation.timestamp}")
+    print(f"# Location: {observation.location}")
+    print(f"# Coordinates: {observation.coordinates}")
+    print(f"# System Status: {observation.system_status}")
+    print(f"# Fare Model: {observation.fare_model}")
+```

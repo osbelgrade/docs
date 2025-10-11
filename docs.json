@@ -101,7 +101,11 @@
       "mcp",
       "cursor",
       "vscode"
-    ]
+    ],
+    "feedback": {
+      "suggestEdit": false,
+      "raiseIssue": false
+    }
   },
   "footer": {
     "socials": {

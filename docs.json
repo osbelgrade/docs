@@ -1,6 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "aspen",
+  "feeback":{
+    "suggestEdit": false,
+    "raiseIssue": false
+  },
+  
   "name": "COS: Belgrade",
   "colors": {
     "primary": "#ff4b33",

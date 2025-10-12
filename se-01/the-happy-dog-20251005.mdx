@@ -14,32 +14,32 @@ COS:B System Errors - Memorial protocol mismatch: expected solemnity not found
 class MemorialProtocolSequence:
     def __init__(self):
         self.location = "Jajinci Memorial, Belgrade"
-        self.timestamp = "2025-10-05T15:46+02:00"
+        self.timestamp = "2025-10-[DATE]T[TIME]+02:00"
         self.coordinates = "44.7519° N, 20.4247° E"
         self.expected_protocol = "Western memorial solemnity"
         self.observed_protocol = "Life alongside death"
     
     def observe(self):
         return """
-A walk across suburban hills to the camp.
+A walk across the suburban hills to the camp.
 
-The church - a brutalist statement in concrete
-as water drips
+The church a brutalist statement in concrete
+as water dripped
 from rusted pipes.
 
 The lady reading her book
 on the edge of the mass grave
-her coffee steaming in the tepid sunlight.
-Clouds race overhead.
+as clouds raced overhead.
 
-Flowers drooping to the sound of the workmen - 
+Flowers dropping to the sound of the workmen—
 working?
 On a Sunday?
 
-There's no sense of foreboding here.
+No gravity as prescribed here
+and no sense of foreboding
 Or at least the sense that I am used to.
 
-But the happy dog followed me.
+The happy dog followed me.
         """
 
 if __name__ == "__main__":

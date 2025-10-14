@@ -1,14 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "aspen",
-  "analytics": {
-    "customScripts": [
-      {
-        "src": "https://v0-osb-agent.vercel.app/api/embed",
-        "async": true
-      }
-    ]
-  },
   "feeback": {
     "suggestEdit": false,
     "raiseIssue": false

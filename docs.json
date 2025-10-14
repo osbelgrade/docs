@@ -91,5 +91,13 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
+  },
+  "analytics": {
+    "custom": [
+      {
+        "provider": "custom",
+        "script": "https://osbelgrade.github.io/osbelgrade-chat-widget/widget-production.js"
+      }
+    ]
   }
 }

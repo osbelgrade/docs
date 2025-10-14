@@ -1,0 +1,8 @@
+<script dangerouslySetInnerHTML={{__html: `
+(function() {
+    if (document.getElementById('doc-chat-widget')) return;
+    const script = document.createElement('script');
+    script.src = 'https://osbelgrade.github.io/osbelgrade-chat-widget/widget-production.js';
+    document.body.appendChild(script);
+})();
+`}} />

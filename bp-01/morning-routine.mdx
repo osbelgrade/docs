@@ -1,0 +1,70 @@
+---
+title: "morning-routine"
+description: "Synchronised observation protocol: anonymous witness system"
+mode: "wide"
+---
+
+```python morning-routine
+#!/usr/bin/env python3
+"""
+Observation Log: Morning Routine, Beranska
+COS:B Background Processes - Synchronized observation protocol: anonymous witness system
+"""
+
+class MorningWitnessSequence:
+    def __init__(self):
+        self.location = "Balcony, Beranska Ul, Belgrade"
+        self.timestamp = "2025-10-14T05:00:00+02:00"
+        self.coordinates = "44.7588° N, 20.4825° E"
+        self.routine_duration = "Daily since arrival"
+        self.pattern_status = "Disrupted"
+    
+    def observe(self):
+        return """
+I get up every morning at 5:00.
+
+Sitting on the balcony with that silence—
+the kind that exists before the city remembers itself.
+
+Only the birds,
+their scattered commentary.
+
+And the rattle of the ancient tram number 09
+heading to Blok 45,
+metal grinding against metal,
+older than memory.
+
+The brutalist tower blocks across the road are dark at first,
+concrete monuments holding their breath.
+
+Then: one light.
+
+High up.
+Eighth floor, maybe ninth.
+
+Must have a great view from there.
+
+All I see is a shadowy figure
+moving across the window,
+
+and the glowing tip of a cigarette—
+that orange pulse in the pre-dawn grey.
+
+I could set my clock by him.
+5:03, 5:04 at the latest.
+
+It became reassuring.
+Part of the morning's architecture.
+
+Until one day there was no light.
+        """
+
+if __name__ == "__main__":
+    observation = MorningWitnessSequence()
+    print(observation.observe())
+    print(f"\n# Logged: {observation.timestamp}")
+    print(f"# Location: {observation.location}")
+    print(f"# Coordinates: {observation.coordinates}")
+    print(f"# Routine: {observation.routine_duration}")
+    print(f"# Status: {observation.pattern_status}")
+```

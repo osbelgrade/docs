@@ -1,11 +1,18 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "aspen",
-  "feeback":{
+  "analytics": {
+    "customScripts": [
+      {
+        "src": "https://v0-osb-agent.vercel.app/zora-embed.js",
+        "async": true
+      }
+    ]
+  },
+  "feeback": {
     "suggestEdit": false,
     "raiseIssue": false
   },
-  
   "name": "COS: Belgrade",
   "colors": {
     "primary": "#ff4b33",
@@ -14,11 +21,11 @@
   },
   "styling": {
     "eyebrows": "breadcrumbs"
-},
-"modeToggle": {
+  },
+  "modeToggle": {
     "default": "dark",
     "strict": "false"
-  },  
+  },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
@@ -27,13 +34,8 @@
         "groups": [
           {
             "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
+            "pages": ["index", "quickstart", "development"]
           },
-          
           {
             "group": "Chapters",
             "pages": [
@@ -44,21 +46,14 @@
               "chapters/version-history"
             ]
           },
-          
           {
             "group": "Codex",
-            "pages": [
-              "essentials/images",
-              "essentials/audio",
-              "essentials/snippets",
-              "essentials/downloads"
-            ]
+            "pages": ["essentials/images", "essentials/audio", "essentials/snippets", "essentials/downloads"]
           },
           {
             "group": "System",
             "pages": [
               "changelog",
-              
               "ai-tools/zora",
               "ai-tools/branding",
               "ai-tools/share",
@@ -68,13 +63,8 @@
           },
           {
             "group": "Admin",
-            "pages": [
-             "about",
-             "tools",
-             "wwtc",
-             "reticulate"
-           ]
-         }
+            "pages": ["about", "tools", "wwtc", "reticulate"]
+          }
         ]
       }
     ]
@@ -97,16 +87,7 @@
     }
   },
   "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ],
+    "options": ["copy", "view", "chatgpt", "claude", "perplexity", "mcp", "cursor", "vscode"],
     "feedback": {
       "suggestEdit": false,
       "raiseIssue": false

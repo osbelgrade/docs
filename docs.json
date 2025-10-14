@@ -4,7 +4,7 @@
   "analytics": {
     "customScripts": [
       {
-        "src": "https://v0-osb-agent.vercel.app/zora-embed.js",
+        "src": "https://v0-osb-agent.vercel.app/api/embed",
         "async": true
       }
     ]

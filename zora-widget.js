@@ -324,6 +324,8 @@
     const message = input.value.trim()
     if (!message) return
 
+    console.log("[v0] Zora: Sending message:", message)
+
     // Add user message
     addMessage(message, "user")
     input.value = ""
@@ -332,21 +334,30 @@
     const loadingId = addLoadingMessage()
 
     try {
+      const requestBody = {
+        messages: [{ role: "user", content: message }],
+      }
+
+      console.log("[v0] Zora: Request body:", requestBody)
+      console.log("[v0] Zora: API endpoint:", ZORA_CONFIG.apiEndpoint)
+
       // Call Zora API
       const response = await fetch(ZORA_CONFIG.apiEndpoint, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          messages: [{ role: "user", parts: [{ type: "text", text: message }] }],
-        }),
+        body: JSON.stringify(requestBody),
       })
+
+      console.log("[v0] Zora: Response status:", response.status)
 
       removeMessage(loadingId)
 
       if (!response.ok) {
-        throw new Error("Failed to get response")
+        const errorText = await response.text()
+        console.error("[v0] Zora: API error:", errorText)
+        throw new Error(`Failed to get response: ${response.status}`)
       }
 
       // Handle streaming response
@@ -366,6 +377,7 @@
           if (line.startsWith("data: ")) {
             try {
               const data = JSON.parse(line.slice(6))
+              console.log("[v0] Zora: Stream data:", data)
               if (data.type === "text-delta") {
                 assistantMessage += data.textDelta
                 if (messageId) {
@@ -375,12 +387,13 @@
                 }
               }
             } catch (e) {
-              // Ignore parse errors
+              console.error("[v0] Zora: Parse error:", e)
             }
           }
         }
       }
     } catch (error) {
+      console.error("[v0] Zora: Error:", error)
       removeMessage(loadingId)
       addMessage("Sorry, I encountered an error. Please try again.", "assistant")
     }

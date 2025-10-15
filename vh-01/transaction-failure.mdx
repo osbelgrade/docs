@@ -1,0 +1,82 @@
+---
+title: "transaction-failure"
+description: "Payment protocol update: sanctions workaround learned, connection established"
+mode: "wide"
+---
+
+```python transaction-failure
+#!/usr/bin/env python3
+"""
+Observation Log: Supermarket Transaction Failure
+COS:B Version History - Payment protocol update: sanctions workaround learned, connection established
+"""
+
+class SanctionNavigationSequence:
+    def __init__(self):
+        self.location = "Gazprom, Belgrade"
+        self.timestamp = "2025-10-14T19:22+02:00"
+        self.coordinates = "44.75839° N, 20.48179° E"
+        self.payment_attempt = "Card declined (sanctions)"
+        self.system_update = "VISA workaround discovered"
+        self.social_status = "Connection established"
+    
+    def observe(self):
+        return """
+She shook her head, indifferent.
+
+"Not working," she said,
+handing me back the card,
+moving my purchases to one side.
+
+Cash only.
+
+Apparently.
+
+Sanctions, I understood.
+
+She pointed to the ATM across the shop floor.
+
+Which also refused the transaction.
+
+And I knew I was being watched—
+the queue forming behind me,
+the foreigner failing at something simple.
+
+Until she came over.
+
+"Try VISA," she mumbled,
+barely looking up.
+
+So I did.
+
+The machine kindly gave me 2000 Dinar.
+
+Walking back to the till, I caught her eye,
+waved the note.
+
+She looked momentarily disinterested—
+professional distance maintained—
+
+before raising a thumb
+and grinning, cheekily.
+
+Her charm released—
+
+that warmth of small victories
+shared with strangers.
+
+we'd beaten the sanctions together.
+
+Connection made.
+        """
+
+if __name__ == "__main__":
+    observation = SanctionNavigationSequence()
+    print(observation.observe())
+    print(f"\n# Logged: {observation.timestamp}")
+    print(f"# Location: {observation.location}")
+    print(f"# Coordinates: {observation.coordinates}")
+    print(f"# Payment Status: {observation.payment_attempt}")
+    print(f"# System Update: {observation.system_update}")
+    print(f"# Social Status: {observation.social_status}")
+```

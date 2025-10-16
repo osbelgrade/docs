@@ -46,6 +46,7 @@
             "group": "System",
             "pages": [
               "changelog",
+              "ai-tools/zora",
               "ai-tools/branding",
               "ai-tools/share",
               "ai-tools/claude-code",

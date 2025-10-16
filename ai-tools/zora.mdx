@@ -140,6 +140,33 @@ Zora functions as meta-documentation layer - a system for navigating documentati
 
 ---
 
+## Building Zora: An AI Documentation Assistant
+
+<img
+  src="/images/CleanShot2025-10-16at06.52.20@2x.png"
+  alt="Clean Shot2025 10 16at06 52 20@2x Pn"
+  title="Clean Shot2025 10 16at06 52 20@2x Pn"
+  style={{ width:"48%" }}
+/>
+
+**Zora is a custom AI assistant built specifically for the OS:Belgrade documentation platform. **
+
+Rather than relying on generic chatbots or off-the-shelf solutions, I developed Zora from the ground up to understand the documentation structure and provide accurate, contextual answers to user questions.
+
+The technical architecture combines Claude's Sonnet 4.5 AI model with a custom Flask backend hosted on Railway. Naturally!
+
+When you click "Ask Zora," your question is sent to the installation's API endpoint, which enriches it with knowledge about OS:Belgrade's features, structure, and capabilities before forwarding it to Claude. 
+
+This approach ensures Zora always responds with information specific to the platform rather than generic documentation advice. The widget itself is a lightweight JavaScript component that integrates seamlessly with Mintlify, featuring markdown rendering for clean, readable responses and conversation memory to maintain context across multiple questions.
+
+I'm designing Zora with simplicity and accessibility in mind. 
+
+The distinctive orange "Ask Zora" button matches the brand identity and provides immediate access to help without disrupting a visitor's workflow. Whether you're looking for quickstart information, troubleshooting guidance, or details about specific features, Zora is trained to point you in the right direction. 
+
+As OS:Belgrade evolves, so will Zora - I'm continuously refining her knowledge base to ensure she remains a helpful companion on your documentation journey, starting with having her dynamically train herself as the site content is updated.
+
+And there you have it!
+
 <Warning>
   **Note**: Zora cannot observe Belgrade for you. The assistant helps you navigate existing documentation - actual protocol discovery requires direct engagement with the city's operating system. Get out there and observe.
 </Warning>

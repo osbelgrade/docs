@@ -1,0 +1,80 @@
+---
+title: "sajmište-interior"
+description: "Trauma subsumption: ordinary life occupying extermination site"
+---
+
+```python sajmište-interior
+#!/usr/bin/env python3
+"""
+Observation Log: Sajmište Interior
+COS:B User Interface - Trauma subsumption: ordinary life occupying extermination site
+"""
+
+class SajmisteBarracksSequence:
+    def __init__(self):
+        self.location = "Sajmište concentration camp barracks, Belgrade"
+        self.timestamp = "2025-10-16T15:40+02:00"
+        self.coordinates = "44.8125° N, 20.4372° E"
+        self.access_status = "Unauthorized entry"
+        self.current_function = "Residential housing"
+        self.historical_function = "Jewish extermination camp (1941-1944)"
+    
+    def observe(self):
+        return """
+The stairwell floods with light
+through broken windows.
+
+Beautiful, almost.
+
+Laundry hangs on lines
+strung between crumbling walls—
+someone's Tuesday, someone's routine.
+
+Silent corridors.
+Bolted doors.
+Notices in Cyrillic I can't read.
+
+I probably shouldn't be here.
+
+People live here.
+
+In these barracks.
+In Sajmište.
+
+Where thousands were murdered.
+
+They hang their washing.
+They bolt their doors.
+They come home at night.
+
+The derelict garage doors are made of lithographic plates,
+stamped metal warped and rusting—
+repurposed, functional, nobody's monument.
+
+A solitary lady appears.
+
+"Dobar dan."
+
+Good day.
+
+As if this is just another building.
+As if the walls don't remember.
+As if ordinary life could cover anything.
+
+The temperature drops
+
+as I walk toward the river,
+away from where they died,
+toward the sliding city.
+        """
+
+if __name__ == "__main__":
+    observation = SajmisteBarracksSequence()
+    print(observation.observe())
+    print(f"\n# Logged: {observation.timestamp}")
+    print(f"# Location: {observation.location}")
+    print(f"# Coordinates: {observation.coordinates}")
+    print(f"# Access: {observation.access_status}")
+    print(f"# Current Use: {observation.current_function}")
+    print(f"# Historical Use: {observation.historical_function}")
+```

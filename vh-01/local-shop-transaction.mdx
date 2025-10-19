@@ -1,0 +1,85 @@
+---
+title: "local-shop-transaction"
+description: "Description of your new file."
+---
+
+```python local-shop-transaction
+#!/usr/bin/env python3
+"""
+Observation Log: Local Shop Transaction
+COS:B Version History - Neighborhood integration: expected difficulty replaced by ease
+"""
+
+class LocalShopSequence:
+    def __init__(self):
+        self.location = "Local shop, Beranska area, Belgrade"
+        self.timestamp = "2025-10-18T22:30+02:00"
+        self.coordinates = "44.7588° N, 20.4825° E"
+        self.expectation = "Difficulty, marked as outsider"
+        self.reality = "Simple transaction, human connection"
+    
+    def observe(self):
+        return """
+It's late.
+
+I walk into the local shop to buy water.
+
+That familiar unease—
+the one that comes when shopping off the beaten track,
+away from the tourist zones,
+where your foreignness becomes obvious
+and you wait to be treated accordingly.
+
+Two waters.
+One beer.
+A packet of Lucky Strike.
+
+440 Dinars.
+
+I thank her in Serbian—
+"Hvala"—
+and offer my card.
+
+She takes it without a word.
+
+Tap.
+
+Transaction complete.
+
+No drama.
+No difficulty.
+Friendly.
+Kind.
+
+I'm turning to leave,
+feeling quietly relieved,
+
+when the boy behind me in line shouts:
+
+"Manchester United!"
+
+Grinning.
+
+As if this explains everything.
+As if football is the universal handshake
+we've both been waiting for.
+
+I laugh.
+
+He laughs.
+
+I walk out into the Belgrade night
+
+feeling a little less foreign
+than when I walked in.
+        """
+
+if __name__ == "__main__":
+    observation = LocalShopSequence()
+    print(observation.observe())
+    print(f"\n# Logged: {observation.timestamp}")
+    print(f"# Location: {observation.location}")
+    print(f"# Coordinates: {observation.coordinates}")
+    print(f"# Expected: {observation.expectation}")
+    print(f"# Actual: {observation.reality}")
+```

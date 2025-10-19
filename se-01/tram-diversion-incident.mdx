@@ -1,0 +1,95 @@
+---
+title: "tram-diversion-incident"
+description: "Local knowledge protocol: hidden information, total navigation failure"
+---
+
+```python tram-diversion-incident
+#!/usr/bin/env python3
+"""
+Observation Log: Tram Diversion Incident
+COS:B System Errors - Local knowledge protocol: hidden information, total navigation failure
+"""
+
+class TramDiversionSequence:
+    def __init__(self):
+        self.location = "Tram line [NUMBER], Belgrade"
+        self.timestamp = "2025-10-19T12:32+02:00"
+        self.coordinates_expected = "44.79531° N, 20.37336° E"
+        self.coordinates_actual = "44.79434° N, 20.43341° E"
+        self.language_barrier = "Critical"
+        self.local_knowledge_status = "Absent"
+    
+    def observe(self):
+        return """
+The driver's voice crackles through the tram—
+Serbian, urgent, incomprehensible.
+
+Around me, a bustle.
+People gathering bags,
+moving toward the doors.
+
+I stay seated.
+
+Whatever he said doesn't apply to me.
+I know where I'm going.
+
+The tram empties by half.
+
+We pull away.
+
+Victory.
+
+Two minutes later: stopped again.
+
+The driver emerges from his cabin
+carrying a long metal hook—
+industrial, purposeful—
+
+jumps down to the tracks,
+jams the hook into the rails,
+yanks something free with a metallic scrape,
+
+climbs back in shouting.
+
+The few remaining passengers stand,
+file past me without eye contact,
+step down to the platform.
+
+I watch them go.
+
+Then follow.
+
+Like a lemming.
+
+The platform is battered, nameless.
+Concrete cracking under weeds.
+No signage I can read.
+
+I'm the only one standing here now.
+
+Phone out:
+completely wrong direction.
+Kilometres from where I need to be.
+
+Right.
+
+Time to replan.
+
+Ten minutes.
+Two blue buses.
+Finally: arrival.
+
+Here's to Belgrade public transport—
+
+and the mysteries it keeps.
+        """
+
+if __name__ == "__main__":
+    observation = TramDiversionSequence()
+    print(observation.observe())
+    print(f"\n# Logged: {observation.timestamp}")
+    print(f"# Expected: {observation.coordinates_expected}")
+    print(f"# Actual: {observation.coordinates_actual}")
+    print(f"# Language Barrier: {observation.language_barrier}")
+    print(f"# Status: {observation.local_knowledge_status}")
+```

@@ -1,0 +1,88 @@
+---
+title: "threshold"
+description: "Observation mode shift: city as object becomes city as relationship"
+mode: "wide"
+---
+
+```python threshold
+#!/usr/bin/env python3
+"""
+Observation Log: Four Week Threshold
+COS:B Version History - Observation mode shift: city as object becomes city as relationship
+"""
+
+class RelationshipThresholdSequence:
+    def __init__(self):
+        self.location = "Vračar district, Belgrade"
+        self.timestamp = "2025-10-26T06:00+02:00"
+        self.coordinates = "44.8042° N, 20.4664° E"
+        self.observation_period = "Four weeks"
+        self.status_change = "Object → Relationship"
+    
+    def observe(self):
+        return """
+Week one:
+
+Belgrade was a collection of sights.
+Unconnected facts about a city
+I didn't know how to read yet.
+
+Everything foreign,
+therefore fascinating.
+
+Week two:
+
+Patterns began to emerge.
+
+The way light falls at rush hour.
+The foot traffic that reveals desire lines
+no planner ever intended.
+
+Four languages spoken
+in as many doorways.
+
+Week four:
+
+Something shifted.
+
+I can't point to the exact moment—
+no revelation, no dramatic change—
+
+but the city stopped being
+an object I was observing
+
+and became a relationship
+I was in.
+
+Attention stopped being effort.
+It became habit.
+
+Every walk had been reconnaissance
+without me knowing it.
+
+Every casual observation
+had been calibration.
+
+Belgrade was patient
+with my initial blindness.
+
+Now it's generous
+with its complexity.
+
+The rose is opening—
+
+not just the city revealing itself,
+
+but me learning to see
+what was always there.
+        """
+
+if __name__ == "__main__":
+    observation = RelationshipThresholdSequence()
+    print(observation.observe())
+    print(f"\n# Logged: {observation.timestamp}")
+    print(f"# Location: {observation.location}")
+    print(f"# Coordinates: {observation.coordinates}")
+    print(f"# Duration: {observation.observation_period}")
+    print(f"# System Update: {observation.status_change}")
+```

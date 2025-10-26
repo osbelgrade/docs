@@ -1,0 +1,74 @@
+---
+title: "colonisation"
+description: "Infrastructure appropriation: functional space transformed to community"
+mode: "wide"
+---
+
+```python colonisation
+#!/usr/bin/env python3
+"""
+Observation Log: Underpass Colonisation, Vračar
+COS:B User Interface - Infrastructure appropriation: functional space transformed to community
+"""
+
+class UnderpassCommunitySequence:
+    def __init__(self):
+        self.location = "Vračar underpasses, Belgrade"
+        self.timestamp = "2025-10-24T18:14+02:00"
+        self.coordinates = "44.8042° N, 20.4664° E"
+        self.original_function = "Pedestrian throughway (brutalist design)"
+        self.current_function = "Commercial and social infrastructure"
+    
+    def observe(self):
+        return """
+The underpasses weren't designed for this.
+
+Brutalist tunnels,
+purely functional—
+concrete tubes to move people
+from one side of the boulevard to the other.
+
+But nobody told the people that.
+
+Small shops colonise the walls now.
+Makeshift shelving bolted into concrete.
+Vendors set up at the mouths—
+flowers, newspapers, phone accessories,
+whatever moves.
+
+People don't just pass through.
+
+They linger.
+They meet.
+They lean against walls, talk and smoke.
+They buy coffee from the kiosk
+that definitely wasn't in the original plans.
+
+Sodium light mixes with the dusk
+at the tunnel entrances,
+creating zones that feel
+neither inside nor outside.
+
+The architects probably never imagined
+their infrastructure would become
+someone's corner shop,
+someone's meeting point,
+someone's daily ritual.
+
+But people refuse to let concrete
+be only concrete.
+
+They turn utility into community.
+
+Every single time.
+        """
+
+if __name__ == "__main__":
+    observation = UnderpassCommunitySequence()
+    print(observation.observe())
+    print(f"\n# Logged: {observation.timestamp}")
+    print(f"# Location: {observation.location}")
+    print(f"# Coordinates: {observation.coordinates}")
+    print(f"# Original Design: {observation.original_function}")
+    print(f"# Actual Use: {observation.current_function}")
+```
